@@ -1,0 +1,46 @@
+// Variable Overrides
+@import "variables";
+
+// Bulma Base
+@import "../../node_modules/bulma/sass/utilities/_all";
+@import "../../node_modules/bulma/sass/base/_all";
+
+// Layout
+@import "../../node_modules/bulma/sass/layout/footer";
+@import "../../node_modules/bulma/sass/layout/hero";
+
+// Elements
+@import "../../node_modules/bulma/sass/elements/button";
+@import "../../node_modules/bulma/sass/elements/container";
+@import "../../node_modules/bulma/sass/elements/image";
+@import "../../node_modules/bulma/sass/elements/notification";
+@import "../../node_modules/bulma/sass/elements/other";
+@import "../../node_modules/bulma/sass/elements/table";
+
+// Components
+@import "../../node_modules/bulma/sass/components/modal";
+
+// These rules needs to be placed here, otherwise PostCSS would remove them.
+html,
+body,
+body > div {
+    height: 100%;
+    overflow: hidden;
+}
+
+// These rules moved to here because used in the CurrencyList and CurrencyModal components as well.
+.notification-wrapper,
+.loading-indicator-wrapper {
+    align-items: center;
+    display: flex;
+    height: inherit;
+    justify-content: center;
+}
+
+.notification-wrapper {
+    & > .notification {
+        font-weight: bold;
+        text-align: center;
+        width: 80%;
+    }
+}

@@ -1,0 +1,22 @@
+@import "../../node_modules/bulma/sass/utilities/functions";
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+
+$primary: #004ba0;
+$primary-invert: #fff;
+
+$text: #263238;
+$text-invert: #fff;
+
+$link: $primary;
+$link-invert: #fff;
+
+$footer-padding: $size-6;
+$footer-background-color: $primary;
+$footer-height: 50px;
+
+$header-height: 80px;
+
+$modal-card-head-background-color: $primary;
+$modal-card-title-color: $primary-invert;
+$modal-card-head-radius: 0;
+$modal-card-body-radius: 0;
